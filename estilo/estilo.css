@@ -1,0 +1,317 @@
+*{
+    margin-left:0;
+    padding-left:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+/* comienzo a darle estilo a mi index */
+#mivideo {  
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    position: fixed;   
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);  
+    z-index: -100; 
+  }
+  .cajaIncio{ 
+    margin-top: 10%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    text-align: center;
+  }
+  .h1Home{
+      justify-content: center;
+      background-color:black;
+      font-size: 500%;
+      color: white;
+      font-family:'Bevan' ;  
+      font-weight:400;
+      margin-bottom: 0%;
+      margin-left: 25%;
+      margin-right: 25%;
+    }
+    .h2Home{
+        justify-content: center;
+        margin-top: 1%;
+        background-color: black;
+        color: white;
+        font-size: 200%;
+        font-family:'Libre Baskerville';
+        margin-right: 25%;
+        margin-left: 25%;
+    }
+    #cajaMenu{
+        padding-left: 0%;
+        position: relative;
+        font-family:'Libre Baskerville';
+    }
+    .ulIndex{
+        list-style-type: none;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+    }
+    .liIndex{
+        width: 9%;
+        border-radius: 100%;
+        display: inline-block;
+    }
+    .aIndex {
+        width: 100%;
+        font-weight:900;
+        font-size: 100%;
+        text-decoration: none;
+        color: white
+     }
+     
+     #cajaPieIndex{
+        margin-top: 5%;
+        display: flex; 
+        justify-content: center;
+     }
+
+     /* doy estilo a el header de todas mis pages*/
+     #headerPags{
+        background-image: url(file:///C:/Users/user/Downloads/pexels-cottonbro-4252771.jpg);
+        position: sticky;
+    }
+     .gridContainer{
+        display: grid;
+        text-align: center;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 100px;
+        gap: 0px 0px;
+        grid-template-areas: "pomodoro menú";
+    }
+    .areaLogo{
+        display: grid;
+        grid-area: pomodoro;
+        
+    }
+    .h1Pags{ 
+        font-size: 300%;
+        color: white;
+        font-family:'Bevan' ;
+        font-weight:400;
+        background-color: black;
+        text-decoration: none;
+        margin-left: 5%;
+    }
+    .areaMenu{
+        display: grid;
+        grid-area: menú;
+        align-items: center;
+        justify-content:right;
+    }
+    #menuPags{
+        color: black;
+        font-family:'Libre Baskerville';
+    }    
+    .ulPags{
+        list-style-type: none;
+    }
+    .liPags{
+        background-color: black;
+        display: inline-block;   
+    }
+    .aPags{
+        color: white;
+        text-decoration:none;
+        
+    }
+    #cajaPie{
+        height: 50px;
+        background-image:linear-gradient(to left, #575858 , white);
+       
+     }
+    /* estilo de la pagina galeria */
+     .containerGaleria{
+        display: grid; 
+        grid-template-columns: 25% 50% 25%; 
+        grid-template-rows: 10% 350px; 
+        gap: 15px 0px; 
+        grid-template-areas: 
+          ". carrusel ."
+          ". parrafo ."; 
+      }
+      .areaCarrusel{
+        display: grid;
+        grid-area: carrusel;
+     }
+     .imgGaleria{
+        margin-left: 7%;
+        margin-top: 5%;
+    }
+      .pGaleria{
+        display: grid;
+        grid-area: parrafo;
+        color: white;
+        font-size: 150%;
+        font-family:'Libre Baskerville';
+    }
+    /* estilo de la pagina reserva*/
+    .containerFormulario{
+        display: grid; 
+        grid-template-columns: 30% 500px; 
+        grid-template-rows: 70%; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+            ". formulario"; 
+    }
+    .formulario{
+        margin-top: 5%;
+        grid-area: formulario;
+    }
+    fieldset{
+        color: white;
+    }
+    legend{ 
+        font-family:'Bevan' ;
+        font-weight:400;
+    }
+
+    label{
+        font-family:'Libre Baskerville';
+    }
+    /*estilo de la pagina nosotros */
+    .areaMain{
+        display: grid;
+        grid-template-columns: 500px 500px;
+        grid-template-rows: 300px 300px;
+        gap: 10px 100px;
+        grid-template-areas:
+            "imagen1 imagen2"
+            "texto1 texto2";
+    }
+    #imgNosotros{
+        grid-area: imagen1;
+        max-width: 100%;
+        height: 100%;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    #pNosotros{
+        grid-area: texto1;
+        color: white;
+        font-size: 145%;
+        font-family:'Libre Baskerville';
+        margin-left: 10%;
+    }
+    .ubicacion{
+        grid-area: imagen2;
+        max-width: 100%;
+        height: 100%;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    .ubicacion:hover{
+        transform: scale(1.5,1.5);
+        transition: 2s;
+    }
+
+    #pUbicacion{
+        grid-area: texto2;
+        color: white;
+        font-family:'Libre Baskerville';
+        font-size: 145%;
+        margin-left: 10%;  
+    }
+    #pUbicacion a{
+        text-decoration: none;
+        color: white;
+        font-family:'Libre Baskerville';
+    }
+    /* estilo de la pagina carta/menu*/
+    .mainCarta{
+        display: grid;
+        grid-template-columns:250px 250px 250px 250px;
+        grid-template-rows: 250px 250px 250px;
+        gap: 5px 5px;
+        grid-template-areas:
+        "plato1 pPlato1 plato2 pPlato2"
+        "plato3 pPlato3 plato4 pPlato4"
+        "plato5 pPlato5 plato6 pPlato6";}
+    
+    .plato1{
+        grid-area: plato1;
+        max-width: 100%;
+        max-height: 100%;}
+    .plato1:hover{
+        transform: scale(1.5,1.5);
+        transition: 2s;
+    }
+    .plato2{
+        grid-area: plato2;
+        max-width: 100%;
+        max-height: 100%;}
+    .plato2:hover{
+        transform: scale(1.5,1.5);
+        transition: 2s;
+    }
+    .plato3{
+        grid-area: plato3;
+        max-width: 100%;
+        max-height: 100%;}
+    .plato3:hover{
+        transform: scale(1.5,1.5);
+        transition: 2s;
+     }
+    .plato4{
+        grid-area: plato4;
+        max-width: 100%;
+        max-height: 100%;}
+    .plato4:hover{
+        transform: scale(1.5,1.5);
+         transition: 2s;
+    }
+    .plato5{
+        grid-area: plato5;
+        max-width: 100%;
+        max-height: 100%;}
+    .plato5:hover{
+        transform: scale(1.5,1.5);
+         transition: 2s;
+     }
+    .plato6{
+        grid-area: plato6;
+        max-width: 100%;
+        max-height: 100%;}
+    .plato6:hover{
+         transform: scale(1.5,1.5);
+        transition: 2s;
+    }
+    .pPlato1{
+        grid-area: pPlato1;}
+    .pPlato1{
+        grid-area: pPlato2;}
+    .pPlato1{
+        grid-area: pPlato3;}
+    .pPlato1{
+        grid-area: pPlato4;}
+    .pPlato1{
+        grid-area: pPlato5;}
+    .pPlato1{
+        grid-area: pPlato6;}
+
+    p{
+        color: white;
+        font-family:'Bevan' ;
+        font-weight:400;
+
+    }
+    
+
+/* Color Theme Swatches in Hex */
+.A-Birdcage-1-hex { color: #575858; }
+.A-Birdcage-2-hex { color: #31403D; }
+.A-Birdcage-3-hex { color: #0F261E; }
+.A-Birdcage-4-hex { color: #050D0A; }
+.A-Birdcage-5-hex { color: #F2F2F2; }
+
