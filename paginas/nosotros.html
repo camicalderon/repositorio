@@ -5,39 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NOSOTROS pomodoro</title>
-    <link rel="stylesheet" href="../estilo/estilo.css">
     <link  href="https://fonts.googleapis.com/css2?family=Bevan&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../estilo/estilo.css">
 </head>
 <body>
-    <header id="headerPags">
-    <div class="gridContainer">
-        <div class="areaLogo">
-         <a href="../idex.html" class="h1Pags">POMODORO</a> 
-        </div>
-         
-         <!--comienza menú-->
-        <div class="areaMenu">
-        <nav class="menuPags">
-            <ul class="ulPags">
-                <li class="liPags">
-                    <a href="../paginas/nosotros.html" class="aPags">NOSOTROS</a>
-                </li>
-                <li class="liPags">
-                    <a href="../paginas/galeria.html" class="aPags">GALERÍA</a>
-                </li>
-                <li class="liPags">
-                    <a href="../paginas/menu.html" class="aPags">CARTA</a>
-                </li>
-                <li class="liPags">
-                    <a href="../paginas/reserva.html" class="aPags">RESERVAR</a>
-                </li>
-            </ul>
+    <header>
+        <!--comienza menú-->
+        <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../idex.html">POMODORO</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="galeria.html">Galería</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Carta</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="reserva.html">Reservar</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
         </nav>
-        </div>
-    </div>
-        <!--finaliza menú-->
+        <!--fin menú-->
     </header>
 
     <main class="areaMain">
@@ -59,5 +65,7 @@
     <footer id="cajaPie">
         
     </footer>
+     <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

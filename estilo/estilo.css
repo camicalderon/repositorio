@@ -24,7 +24,7 @@ body{
     justify-content: center;
     text-align: center;
   }
-  .h1Home{
+ .h1Home{
       justify-content: center;
       background-color:black;
       font-size: 500%;
@@ -69,14 +69,17 @@ body{
         color: white
      }
      
-     #cajaPieIndex{
+    #cajaPieIndex{
         margin-top: 5%;
         display: flex; 
         justify-content: center;
-     }
-
+     } 
+    .navbar-brand{
+        font-family:'Bevan';
+        font-size: 170%;
+    }
      /* doy estilo a el header de todas mis pages*/
-     #headerPags{
+     /*#headerPags{
         background-image: url(file:///C:/Users/user/Downloads/pexels-cottonbro-4252771.jpg);
         position: sticky;
     }
@@ -130,9 +133,12 @@ body{
         height: 50px;
         background-image:linear-gradient(to left, #575858 , white);
        
-     }
+     } */
+
     /* estilo de la pagina galeria */
-     .containerGaleria{
+     
+    
+    /*.containerGaleria{
         display: grid; 
         grid-template-columns: 25% 50% 25%; 
         grid-template-rows: 10% 350px; 
@@ -155,6 +161,19 @@ body{
         color: white;
         font-size: 150%;
         font-family:'Libre Baskerville';
+    } */
+    #carouselExampleIndicators{
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 2%;
+    }
+    .h1Galeria{
+        color: white;
+        font-size: 200%;
+        text-align: center;
+        font-family:'Libre Baskerville';
+        margin-top: 2%;
+        margin-bottom: 0%;
     }
     /* estilo de la pagina reserva*/
     .containerFormulario{
@@ -203,6 +222,7 @@ body{
         font-size: 145%;
         font-family:'Libre Baskerville';
         margin-left: 10%;
+        margin-top: 10%;
     }
     .ubicacion{
         grid-area: imagen2;
@@ -222,6 +242,7 @@ body{
         font-family:'Libre Baskerville';
         font-size: 145%;
         margin-left: 10%;  
+        margin-top: 10%;
     }
     #pUbicacion a{
         text-decoration: none;
